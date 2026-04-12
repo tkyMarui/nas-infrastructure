@@ -24,6 +24,7 @@ Este projeto consiste em dois servidores Linux dedicados:
 - Backup agendado diariamente com `cron`  
 - Acesso remoto ao Nextcloud com VPN Tailscale (Wireguard)
 - Filtragem, bloqueio de anúncios e análise de tráfego com Pi-hole em Docker Compose
+- Firewall com UFW (deny incoming por padrão + liberação explícita de serviços essenciais)
 
 ## Por que este projeto é importante ?
 
