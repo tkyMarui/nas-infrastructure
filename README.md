@@ -45,6 +45,29 @@ Ele mostra capacidade de construir um ambiente funcional, documentado e resilien
 - Servidor NAS central para armazenamento e compartilhamento, e Backup fisicamente isolado
 - Acesso remoto sem exposição direta de portas na internet
 - Redução de risco de perda de dados
-- Base sólida para evolução futura com monitoramento, alertas e hardening
+- Base sólida para evoluções futuras
 
-**Última atualização:** 2026-04-11
+## Conhecimentos Demonstrados
+
+✅ Infraestrutura e Storage  
+✅ Redes (RAID, LVM, NFS, SMB)  
+✅ Segurança (Firewall, VPN, DNS filtering)  
+✅ Containerização (Docker)  
+✅ Backup e Disaster Recovery    
+✅ Automação (scripts, cron jobs)  
+✅ Troubleshooting avançado  
+✅ Hardening de SSH (acesso por chaves) 
+
+## 🚀 Updates futuros
+
+- Implementar VPN por WireGuard puro
+- Implementação de reverse proxy (Nginx) com HTTPS e certificados TLS
+- Monitoramento com Prometheus + Grafana
+- Sistema de alertas (e-mail ou webhook) para falhas de RAID, backup e serviços
+- Implementação de Fail2Ban para proteção contra tentativas de brute force
+- Logs centralizados e análise de eventos
+- Otimização de performance do Nextcloud (cache Redis)
+- Segmentação de rede (VLAN) para isolamento de serviços
+
+
+**Última atualização:** 2026-03-10
