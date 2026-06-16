@@ -61,7 +61,7 @@ Ele mostra capacidade de construir um ambiente funcional, documentado e resilien
 
 ## 🚀 Updates futuros
 
-- (hipotético) Implementar VPN WireGuard - competências presentes, porém, não aplicado, pois não havia necessidade pagar VPS apenas para a simulação
+- (hipotético) Implementar VPN WireGuard - competências já presentes, porém, não aplicado, pois não havia necessidade pagar uma VPS apenas para a simulação
 - Monitoramento com Prometheus
 - Sistema de alertas (e-mail) para falhas de RAID, backup e serviços
 - Implementação de Fail2Ban para proteção contra tentativas de brute force
