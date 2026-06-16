@@ -23,7 +23,7 @@ Este projeto consiste em dois servidores Linux dedicados:
 - Backup por técnica 321 - 3 cópias, 2 mídias, 1 offsite
 - Backup sincronizado por `rsync` em `SSH` com chaves de acesso
 - Backup agendado diariamente com `cron`  
-- Acesso remoto ao Nextcloud com VPN Tailscale (Wireguard)
+- Acesso remoto ao Nextcloud com VPN Tailscale
 - Filtragem, bloqueio de anúncios e análise de tráfego com Pi-hole em Docker Compose
 - Firewall com UFW (deny incoming por padrão + liberação explícita de serviços essenciais)
 
@@ -61,14 +61,10 @@ Ele mostra capacidade de construir um ambiente funcional, documentado e resilien
 
 ## 🚀 Updates futuros
 
-- Implementar VPN por WireGuard puro
-- Implementação de reverse proxy (Nginx) com HTTPS e certificados TLS
-- Monitoramento com Prometheus + Grafana
-- Sistema de alertas (e-mail ou webhook) para falhas de RAID, backup e serviços
+- (hipotético) Implementar VPN WireGuard - competências presentes, porém, não aplicado, pois não havia necessidade pagar VPS apenas para a simulação
+- Monitoramento com Prometheus
+- Sistema de alertas (e-mail) para falhas de RAID, backup e serviços
 - Implementação de Fail2Ban para proteção contra tentativas de brute force
 - Logs centralizados e análise de eventos
-- Otimização de performance do Nextcloud (cache Redis)
-- Segmentação de rede (VLAN) para isolamento de serviços
-
 
 **Última atualização:** 2026-03-10
