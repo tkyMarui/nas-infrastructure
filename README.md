@@ -4,15 +4,15 @@ Infraestrutura robusta de armazenamento em rede com redundância, backup automat
 
 ## Objetivos
 
-Construir uma pequena simulação de uma infraestrutura empresarial que cobre : cloud privada para os funcionários, armazenamento dedicado a redundância + velocidade, backups periódicos, acesso remoto seguro e observabilidade básica.
+Construir uma pequena simulação de uma infraestrutura empresarial que cobre : cloud privada para os funcionários, armazenamento dedicado a redundância + velocidade, backups periódicos e acesso remoto seguro
 
 Este projeto consiste em dois servidores Linux dedicados:
 
 - **Servidor principal NAS**: Xubuntu, 8 GB de RAM, 4 núcleos
-  - 4 discos para storage em **RAID 10**
+  - 4 discos storage em **RAID 10**
   - 1 disco configurado como **hot spare**
 - **Servidor de backup**: Ubuntu Server, 8 GB de RAM, 4 núcleos
-  - 5 discos para storage em **RAID 6**
+  - 5 discos storage em **RAID 6**
   - 1 disco configurado como **hot spare**
 
 ## Features implementadas
@@ -21,25 +21,23 @@ Este projeto consiste em dois servidores Linux dedicados:
 - Volume do Nextcloud montado dentro da RAID 10
 - Snapshots com Back In Time para as pastas dos setores
 - Backup por técnica 321 - 3 cópias, 2 mídias, 1 offsite
-- Backup sincronizado por `rsync` em `SSH` com chaves de acesso
+- Backup sincronizado por `rsync` com chaves de acesso
 - Backup agendado diariamente com `cron`  
 - Acesso remoto ao Nextcloud com VPN Tailscale
 - Filtragem, bloqueio de anúncios e análise de tráfego com Pi-hole em Docker Compose
 - Firewall com UFW (deny incoming por padrão + liberação explícita de serviços essenciais)
 
-## Por que este projeto é importante ?
-
-Este projeto demonstra competências práticas em:
+## Este projeto demonstra competências práticas em:
 
 - planejamento de infraestrutura
-- tolerância a falhas
+- implementação de armazenamento com RAID para tolerância a falhas e melhor desempenho de acesso aos dados
 - automação de backup
 - administração Linux
-- organização de serviços em container
+- organização de serviços em containers
 - acesso remoto seguro
 - separação entre dados primários e cópias de segurança
 
-Ele mostra capacidade de construir um ambiente funcional, documentado e resiliente, com preocupação real com continuidade operacional.
+Além de construir um ambiente funcional e documentado, o projeto demonstra preocupação com desempenho, disponibilidade dos serviços e continuidade operacional, utilizando redundância de armazenamento, snapshots e um servidor de backup dedicado.
 
 ## Resultado esperado
 
@@ -56,7 +54,7 @@ Ele mostra capacidade de construir um ambiente funcional, documentado e resilien
 ✅ Containerização (Docker)  
 ✅ Backup e Disaster Recovery    
 ✅ Automação (scripts, cron jobs)  
-✅ Troubleshooting avançado  
+✅ Troubleshooting  
 ✅ Hardening de SSH (acesso por chaves) 
 
 ## 🚀 Updates futuros
