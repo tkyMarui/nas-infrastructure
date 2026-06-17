@@ -67,4 +67,4 @@ Ele mostra capacidade de construir um ambiente funcional, documentado e resilien
 - Implementação de Fail2Ban para proteção contra tentativas de brute force
 - Logs centralizados e análise de eventos
 
-**Última atualização:** 2026-03-10
+**Última atualização:** 05/03/26
