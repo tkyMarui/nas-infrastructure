@@ -20,7 +20,6 @@ Este projeto consiste em dois servidores Linux dedicados:
 - Nextcloud + MySQL em Docker Compose
 - Volume do Nextcloud montado dentro da RAID 10
 - Snapshots com Back In Time para as pastas dos setores
-- Backup por técnica 321 - 3 cópias, 2 mídias, 1 offsite
 - Backup sincronizado por `rsync` com chaves de acesso
 - Backup agendado diariamente com `cron`  
 - Acesso remoto ao Nextcloud com VPN Tailscale
